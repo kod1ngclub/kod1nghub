@@ -1,10 +1,10 @@
-export interface LinkBundle {
-    name: string
-    href: string
+export interface Link {
+    default: string
+    sub: Array<{ name: string, href: string }>
 }
 
 export interface Service {
     name: string
     description: string
-    links: Array<LinkBundle>
+    link: Link
 }
