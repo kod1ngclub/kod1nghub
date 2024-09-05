@@ -7,4 +7,5 @@ export interface Service {
     name: string
     description: string
     link: Link
+    major: boolean
 }
