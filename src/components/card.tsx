@@ -7,7 +7,7 @@ export interface CardProps {
 }
 
 const Card = ({ title, description, link }: CardProps) => (
-    <div className="text tstyl-center">
+    <div className="text tstyl-center" style={{ display: "block"}}>
         <h3 className="tstyl-bold">
             <Link className="link" href={link.default}>{title}</Link>
         </h3>
