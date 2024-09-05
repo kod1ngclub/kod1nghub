@@ -27,7 +27,7 @@ export const GetContactByName = async (name: ContactName) => {
     return contacts[0] // return only first
 }
 
-export const GetContactsByName = async (name: ContactName) => {
+export const GetAllContactsByName = async (name: ContactName) => {
     const queried = query(collection(firestore_DB, FIREBASE_CONTACT_COLLECTION_NAME), where("name", "==", name))
     const snapshoted = await getDocs(queried)
 
