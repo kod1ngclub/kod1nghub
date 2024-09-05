@@ -12,7 +12,7 @@ const Card = ({ title, description, link }: CardProps) => (
             <Link className="link" href={link.default}>{title}</Link>
         </h3>
         
-        <p className="m-2y">{description}</p>
+        <p className="my-2">{description}</p>
         <div className="flex--r-c">
             { link.sub.map(item => <Link className="link--deco" href={item.href}>{item.name}</Link>) }
         </div>
