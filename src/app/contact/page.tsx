@@ -9,6 +9,7 @@ import Flex, { FlexDirection, FlexJustifying } from "@/components/flex"
 // icon components
 import { DiscordIcon } from "@/components/icon/discord"
 import { EmailIcon } from "@/components/icon/email"
+import { PhoneIcon } from "@/components/icon/phone"
 
 // next components
 import Link from "next/link"
@@ -16,6 +17,7 @@ import Link from "next/link"
 const Contact = async () => {
     const discord = await GetContactByName(ContactName.Discord)
     const email = await GetContactByName(ContactName.Email)
+    const phone = await GetContactByName(ContactName.Phone)
     
     return (
         <main>
@@ -32,6 +34,13 @@ const Contact = async () => {
                     <Flex direction={FlexDirection.Column} justifying={FlexJustifying.Center}>
                         <EmailIcon color={null} size={64} />
                         <span className="text">{email.name}</span>
+                    </Flex>
+                </Link>
+
+                <Link className="link" href={phone.link}>
+                    <Flex direction={FlexDirection.Column} justifying={FlexJustifying.Center}>
+                        <PhoneIcon color={null} size={64} />
+                        <span className="text">{phone.name}</span>
                     </Flex>
                 </Link>
             </Grid>        
