@@ -1,5 +1,7 @@
+// next components
 import Link from "next/link"
 
+// utils
 import { NewID } from "@/utils/id"
 
 const ICON_TEXT = "Kod1ngclub"

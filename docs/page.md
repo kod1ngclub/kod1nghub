@@ -1,4 +1,4 @@
-# Page
+# Coding Standard: `page.tsx`
 
 ## Import
 

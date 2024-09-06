@@ -1,3 +1,4 @@
+// props
 export interface IconProps {
     size: number
     color: null | string

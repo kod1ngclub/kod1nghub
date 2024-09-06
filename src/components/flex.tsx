@@ -1,3 +1,4 @@
+// props
 export enum FlexDirection { Row = "r" , Column = "c" }
 export enum FlexJustifying { Start = "st", SpaceBetween = "sb", Center = "c" }
 

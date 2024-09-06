@@ -1,7 +1,10 @@
+// next components
 import Link from "next/link"
 
+// utils
 import { NewID } from "@/utils/id"
 
+// props
 export interface CardProps {
     title: string
     description: string
