@@ -1,5 +1,7 @@
+// components
 import { Nav } from "@/components/nav"
 
+// CSS import
 import "@/style/style.min.css"
 
 const Layout = ({ children }: Readonly<{ children: React.ReactNode }> ) => {

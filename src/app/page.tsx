@@ -1,9 +1,10 @@
+// model and service
 import { ContactName } from "@/model/contact"
 
 import { GetAllMajorServcies } from "@/service/service"
 import { GetContactByName  } from "@/service/contact"
 
-
+// components
 import Flex, { FlexDirection, FlexJustifying } from "@/components/flex"
 import Grid from "@/components/grid"
 import Card from "@/components/card"
@@ -11,6 +12,7 @@ import Jumbotron from "@/components/jumbotron"
 
 import Link from "next/link"
 
+// utils
 import { NewID } from "@/utils/id"
 
 const Home = async () => {

@@ -1,3 +1,4 @@
+// model and service
 import { ContactName } from "@/model/contact"
 
 import { GetContactByName } from "@/service/contact"
@@ -6,12 +7,10 @@ import { GetContactByName } from "@/service/contact"
 import Grid from "@/components/grid"
 import Flex, { FlexDirection, FlexJustifying } from "@/components/flex"
 
-// icon components
 import { DiscordIcon } from "@/components/icon/discord"
 import { EmailIcon } from "@/components/icon/email"
 import { PhoneIcon } from "@/components/icon/phone"
 
-// next components
 import Link from "next/link"
 
 const Contact = async () => {
