@@ -48,3 +48,5 @@ const Contact = async () => {
 }
 
 export default Contact
+
+export const revalidate = 60

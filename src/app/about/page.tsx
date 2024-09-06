@@ -3,3 +3,5 @@ const About = () => (
 )
 
 export default About
+
+export const revalidate = 60
