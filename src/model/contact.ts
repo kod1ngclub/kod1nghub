@@ -5,5 +5,6 @@ export interface Contact {
 
 export enum ContactName {
     Discord = "Discord",
-    Email = "Email"
+    Email = "Email",
+    Phone = "Phone"
 }
