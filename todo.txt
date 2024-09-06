@@ -1,4 +1,4 @@
 1. write coding standard about model
 2. write coding standard about service
-3. write codig standard about style
-4. write coding standad about utils
+3. write coding standard about style
+4. write coding standard about utils
