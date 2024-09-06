@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+import { NewID } from "@/utils/id"
+
 const ICON_TEXT = "Kod1ngclub"
 
 const NAV_LINKS = [
@@ -13,7 +15,7 @@ export const Nav = () => (
         <h1 className="nav__icon">{ICON_TEXT}</h1>
         <nav className="flex--r-sb">
             { NAV_LINKS.map(item => {
-                return <Link className="nav__item" href={item.href}>{item.name}</Link>
+                return <Link key={NewID()} className="nav__item" href={item.href}>{item.name}</Link>
             })}
         </nav>
     </header>

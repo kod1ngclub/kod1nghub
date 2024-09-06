@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+import { NewID } from "@/utils/id"
+
 export interface CardProps {
     title: string
     description: string
@@ -14,7 +16,7 @@ const Card = ({ title, description, link }: CardProps) => (
         
         <p className="my-2">{description}</p>
         <div className="flex--r-c">
-            { link.sub.map(item => <Link className="link--deco" href={item.href}>{item.name}</Link>) }
+            { link.sub.map(item => <Link key={NewID()} className="link--deco" href={item.href}>{item.name}</Link>) }
         </div>
     </div>
 )

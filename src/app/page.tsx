@@ -3,13 +3,15 @@ import { ContactName } from "@/model/contact"
 import { GetAllMajorServcies } from "@/service/service"
 import { GetContactByName  } from "@/service/contact"
 
-import Link from "next/link"
 
 import Flex, { FlexDirection, FlexJustifying } from "@/components/flex"
 import Grid from "@/components/grid"
 import Card from "@/components/card"
 import Jumbotron from "@/components/jumbotron"
 
+import Link from "next/link"
+
+import { NewID } from "@/utils/id"
 
 const Home = async () => {
     const DISCORD = await GetContactByName(ContactName.Discord)
@@ -31,7 +33,7 @@ const Home = async () => {
             
             <div className="resbody pt-3">
                 <Grid>
-                    { services.map(item => ( <Card title={item.name} description={item.description} link={item.link} /> ))}
+                    { services.map(item => ( <Card key={NewID()} title={item.name} description={item.description} link={item.link} /> ))}
                 </Grid>
             </div>
         </main>
