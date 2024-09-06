@@ -20,7 +20,8 @@ const Home = async () => {
 
             <Jumbotron>
                 <h1 className="typo1">Kod1ngclub</h1>
-                <p className="text">코딩 동아리를 위한 코딩 동아리</p>
+                <p className="text mb-2">코딩 동아리를 위한 코딩 동아리</p>
+
                 <Flex direction={FlexDirection.Row} justifying={FlexJustifying.Center}>
                     <Link className="link" href={DISCORD.link}>Discord에 참가하기</Link>
                 </Flex>
