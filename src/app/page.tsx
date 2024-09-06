@@ -24,6 +24,7 @@ const Home = async () => {
                 <Flex direction={FlexDirection.Row} justifying={FlexJustifying.Center}>
                     <Link className="link" href={DISCORD.link}>Discord에 참가하기</Link>
                 </Flex>
+                <p className="text">아니면 서비스 둘러보기</p>
             </Jumbotron>
 
             
