@@ -1,5 +1,7 @@
+// model
 import { Contact, ContactName } from "@/model/contact"
 
+// firebase
 import { collection, query, getDocs, where } from "firebase/firestore"
 import { firestore_DB } from "./firebase/firestore"
 

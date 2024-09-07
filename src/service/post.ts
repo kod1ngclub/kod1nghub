@@ -1,5 +1,7 @@
+// model
 import { Post } from "@/model/post"
 
+// firebase
 import { collection, query, getDocs, orderBy } from "firebase/firestore"
 import { firestore_DB } from "./firebase/firestore"
 
