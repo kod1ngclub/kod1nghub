@@ -47,3 +47,7 @@ const About = () => (
 
 export default About
 ```
+
+## ISR
+
+If page is using **ISR**, export `revalidate` at the bottom of the file.
