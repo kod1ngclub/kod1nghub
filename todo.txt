@@ -1,5 +1,3 @@
-4. write coding standard about utils
-
 5. Draw favicon
 6. Draw opengraph card image
 7. Add metadata for each page
