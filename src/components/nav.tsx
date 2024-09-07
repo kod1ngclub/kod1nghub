@@ -15,7 +15,7 @@ const NAV_LINKS = [
 export const Nav = () => (
     <header className="nav">
         <h1 className="nav__icon">{ICON_TEXT}</h1>
-        <nav className="flex--r-sb">
+        <nav className="flex--r-sb-g1">
             { NAV_LINKS.map(item => {
                 return <Link key={NewID()} className="nav__item" href={item.href}>{item.name}</Link>
             })}
