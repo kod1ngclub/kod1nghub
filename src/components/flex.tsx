@@ -9,7 +9,7 @@ export interface FlexProps {
 }
 
 const Flex = ({ children, direction, justifying }: FlexProps) => (
-    <div className={`flex--${direction}-${justifying}`}>
+    <div className={`flex--${direction}-${justifying}-g1`}>
         { children }
     </div>
 )
