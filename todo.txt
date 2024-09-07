@@ -3,3 +3,5 @@
 7. Add metadata for each page
 
 8. Add plugin for google SEO
+
+5. codig standard에 metadata관련 내용 반영하고 docs 전체 리펙토링

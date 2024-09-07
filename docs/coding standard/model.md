@@ -1,6 +1,6 @@
 # Coding Standard: Model
 
-> Pure entity defination only with `type` and `interface` syntax
+## Warnings
 
 - No import
   - An entity should be completely defined in **one file**
@@ -8,7 +8,7 @@
 - Use only `type` and `interface`
 - Export all types and definations about an entity
 
-## Defination order
+## File
 
 As file goes down, `type` and `interface` should follow **upward tendancy** from the perspective of **bottom up** model
 
