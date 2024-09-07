@@ -1,1 +1,4 @@
-curl -o ./style.min.css https://lat-css.vercel.app/lat.min.css
+FILENAME=./style.min.css
+URL=https://lat-css.vercel.app/lat.min.css
+
+curl -o $FILENAME $URL
