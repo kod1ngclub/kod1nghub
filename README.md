@@ -21,4 +21,4 @@ Kod1nghub is [deployed with vercel][vlink]
 
 kod1nghub is under **MIT**
 
-[vlink]: kod1nghub.vercel.app
+[vlink]: https://kod1nghub.vercel.app
