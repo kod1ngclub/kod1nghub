@@ -4,4 +4,5 @@
 
 8. Add plugin for google SEO
 
-5. codig standard에 metadata관련 내용 반영하고 docs 전체 리펙토링
+width="16" height="16" fill="currentColor" class
+width={s} height={s} fill={c} className

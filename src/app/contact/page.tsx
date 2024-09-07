@@ -42,7 +42,7 @@ const Contact = async () => {
                         <span className="text">Phone Call</span>
                     </Flex>
                 </Link>
-            </Grid>        
+            </Grid>
         </main>
     )
 }
