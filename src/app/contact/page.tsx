@@ -13,6 +13,9 @@ import { PhoneIcon } from "@/components/icon/phone"
 
 import Link from "next/link"
 
+// utils
+import { Metadata } from "next"
+
 const Contact = async () => {
     const discord = await GetContactByName(ContactName.Discord)
     const email = await GetContactByName(ContactName.Email)
@@ -48,5 +51,47 @@ const Contact = async () => {
 }
 
 export default Contact
+
+const SITENAME      = "Kod1nghub"
+const TITLE         = "Kod1nghub | Contact"
+const DESCRIPTION   = "Contacts for Kod1ngclub"
+const KEYWORD       = ["kod1ngclub", "codingclub", "coding", "club", "contact"]
+
+const URL           = "https://kod1nghub.vercel.app"
+const ICON_URL      = "/meta/icon.png"
+const OPENGRAPH_URL = "/meta/opengraph.png"
+
+const SITE_LOCALE   = "ko_KR"
+const SITE_TYPE     = "website"
+
+export const metadata: Metadata = {
+    title: TITLE,
+    description: DESCRIPTION,
+    icons: {
+        icon: ICON_URL
+    },
+    keywords: KEYWORD,
+    alternates: {
+        canonical: URL
+    },
+    openGraph: {
+        title: TITLE,
+        description: DESCRIPTION,
+        siteName: SITENAME,
+        locale: SITE_LOCALE,
+        type: SITE_TYPE,
+        url: URL,
+        images: {
+            url: OPENGRAPH_URL
+        }
+    },
+    twitter: {
+        title: TITLE,
+        description: DESCRIPTION,
+        images: {
+            url: OPENGRAPH_URL
+        }
+    }
+}
 
 export const revalidate = 60
