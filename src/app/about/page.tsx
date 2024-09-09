@@ -6,6 +6,7 @@ import { GetAllMinorServcies } from "@/service/service"
 import Grid from "@/components/grid"
 import Flex, { FlexDirection, FlexJustifying} from "@/components/flex"
 import Card from "@/components/card"
+import Hr from "@/components/hr"
 
 import { AngryIcon } from "@/components/icon/angry"
 import { WindowIcon } from "@/components/icon/window"
@@ -84,18 +85,22 @@ const About = async () => {
                     <br />
 
                     그래서 Kod1ngclub은 저희의 서비스를 해결책으로 제시합니다.
-                    <strong className="tstyl-bold">이 툴들과 코드는 완전히 무료이며, 라이센스를 준수한다면 일절 개입하지 않습니다.</strong>
+                    <strong className="tstyl-bold">우리의 툴과 코드는 완전히 무료이며, 라이센스를 준수한다면 일절 개입하지 않습니다.</strong>
                     고민 없이 적용하고 성취해 내세요.
                     두 번째 Kod1ngclub의 등장이 Kod1ngclub의 목표입니다.
                 </p>
 
-                <h3 className="typo3 tstyl-italic">우리의 주요 서비스들</h3>
+                <h2 className="typo2 tstyl-center">Major services</h2>
+                <p className="text">모두가 필요하고 모두가 쓸 수 있는 서비스</p>
+                <Hr />
 
                 <Grid>
                     { majors.map(item => ( <Card key={NewID()} title={item.name} description={item.description} link={item.link} /> ))}
                 </Grid>
 
-                <h3 className="text tstyl-italic">누군가에게 도움이 될지 모르는 것들</h3>
+                <h2 className="typo2 tstyl-center">Crumb codes</h2>
+                <p className="text">누군가는 필요할지 모르는 서비스와 코드들</p>
+                <Hr />
 
                 <Grid>
                     { minors.map(item => ( <Card key={NewID()} title={item.name} description={item.description} link={item.link} /> ))}
