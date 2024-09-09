@@ -1,8 +1,0 @@
-5. Draw favicon
-6. Draw opengraph card image
-7. Add metadata for each page
-
-8. Add plugin for google SEO
-
-width="16" height="16" fill="currentColor" class
-width={s} height={s} fill={c} className
