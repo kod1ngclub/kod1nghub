@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kod1nghub.vercel.app
+
+# Sitemaps
+Sitemap: https://kod1nghub.vercel.app/sitemap.xml
