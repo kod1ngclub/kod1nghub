@@ -10,6 +10,7 @@ import Jumbotron from "@/components/jumbotron"
 import { NewID } from "@/utils/id"
 
 import { Metadata } from "next"
+import { URL, Url } from "url"
 
 const Home = async () => {
     const services = await GetAllMajorServcies()
@@ -38,7 +39,7 @@ const TITLE         = "Kod1nghub | Home"
 const DESCRIPTION   = "A coding club for coding club"
 const KEYWORD       = ["kod1ngclub", "codingclub", "coding", "club"]
 
-const URL           = "https://kod1nghub.vercel.app"
+const SITE_URL      = "https://kod1nghub.vercel.app"
 const ICON_URL      = "/meta/icon.png"
 const OPENGRAPH_URL = "/meta/opengraph.png"
 
@@ -46,6 +47,7 @@ const SITE_LOCALE   = "ko_KR"
 const SITE_TYPE     = "website"
 
 export const metadata: Metadata = {
+    metadataBase: new URL(SITE_URL),
     title: TITLE,
     description: DESCRIPTION,
     icons: {
@@ -53,7 +55,7 @@ export const metadata: Metadata = {
     },
     keywords: KEYWORD,
     alternates: {
-        canonical: URL
+        canonical: SITE_URL
     },
     openGraph: {
         title: TITLE,
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
         siteName: SITENAME,
         locale: SITE_LOCALE,
         type: SITE_TYPE,
-        url: URL,
+        url: SITE_URL,
         images: {
             url: OPENGRAPH_URL
         }

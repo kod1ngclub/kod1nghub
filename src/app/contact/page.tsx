@@ -57,7 +57,7 @@ const TITLE         = "Kod1nghub | Contact"
 const DESCRIPTION   = "Contacts for Kod1ngclub"
 const KEYWORD       = ["kod1ngclub", "codingclub", "coding", "club", "contact"]
 
-const URL           = "https://kod1nghub.vercel.app"
+const SITE_URL      = "https://kod1nghub.vercel.app"
 const ICON_URL      = "/meta/icon.png"
 const OPENGRAPH_URL = "/meta/opengraph.png"
 
@@ -65,6 +65,7 @@ const SITE_LOCALE   = "ko_KR"
 const SITE_TYPE     = "website"
 
 export const metadata: Metadata = {
+    metadataBase: new URL(SITE_URL),
     title: TITLE,
     description: DESCRIPTION,
     icons: {
@@ -72,7 +73,7 @@ export const metadata: Metadata = {
     },
     keywords: KEYWORD,
     alternates: {
-        canonical: URL
+        canonical: SITE_URL
     },
     openGraph: {
         title: TITLE,
@@ -80,7 +81,7 @@ export const metadata: Metadata = {
         siteName: SITENAME,
         locale: SITE_LOCALE,
         type: SITE_TYPE,
-        url: URL,
+        url: SITE_URL,
         images: {
             url: OPENGRAPH_URL
         }
