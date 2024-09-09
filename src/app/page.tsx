@@ -1,8 +1,5 @@
 // model and service
-import { ContactName } from "@/model/contact"
-
 import { GetAllMajorServcies } from "@/service/service"
-import { GetContactByName  } from "@/service/contact"
 
 // components
 import Grid from "@/components/grid"
@@ -13,12 +10,10 @@ import Jumbotron from "@/components/jumbotron"
 import { NewID } from "@/utils/id"
 
 const Home = async () => {
-    const DISCORD = await GetContactByName(ContactName.Discord)
     const services = await GetAllMajorServcies()
 
     return (
         <main>
-
             <Jumbotron>
                 <h1 className="typo1">Kod1ngclub</h1>
                 <p className="text mb-2">코딩 동아리를 위한 코딩 동아리</p>
