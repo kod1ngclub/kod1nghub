@@ -92,7 +92,8 @@ export const metadata: Metadata = {
         images: {
             url: OPENGRAPH_URL
         }
-    }
+    },
+    verification: { google: process.env.GOOGLE_SITE_VERTIFICATION }
 }
 
 export const revalidate = 60
