@@ -52,45 +52,45 @@ const Contact = async () => {
 
 export default Contact
 
-const SITENAME      = "Kod1nghub"
-const TITLE         = "Kod1nghub | Contact"
-const DESCRIPTION   = "Contacts for Kod1ngclub"
-const KEYWORD       = ["kod1ngclub", "codingclub", "coding", "club", "contact"]
+type SiteType               = "website" | "book" | "profile"
+const SITE_URL              = process.env.SITE_URL as string
+const SITE_NAME             = process.env.SITE_NAME as string
+const SITE_LOCALE           = process.env.SITE_LOCALE as string
+const SITE_TYPE             = process.env.SITE_TYPE as SiteType
+const SITE_ICON_URL         = process.env.SITE_OPENGRAPH_URL as string
+const SITE_OPENGRAPH_URL    = process.env.SITE_OPENGRAPH_URL as string
 
-const SITE_URL      = "https://kod1nghub.vercel.app"
-const ICON_URL      = "/meta/icon.png"
-const OPENGRAPH_URL = "/meta/opengraph.png"
-
-const SITE_LOCALE   = "ko_KR"
-const SITE_TYPE     = "website"
+const PAGE_TITLE            = `${SITE_NAME} | Contact`
+const PAGE_DESCRIPTION      = "Contacts for Kod1ngclub"
+const PAGE_KEYWORD          = ["kod1ngclub", "codingclub", "coding", "club", "contact"]
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
-    title: TITLE,
-    description: DESCRIPTION,
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
     icons: {
-        icon: ICON_URL
+        icon: SITE_ICON_URL
     },
-    keywords: KEYWORD,
+    keywords: PAGE_KEYWORD,
     alternates: {
         canonical: SITE_URL
     },
     openGraph: {
-        title: TITLE,
-        description: DESCRIPTION,
-        siteName: SITENAME,
+        title: PAGE_TITLE,
+        description: PAGE_DESCRIPTION,
+        siteName: SITE_NAME,
         locale: SITE_LOCALE,
         type: SITE_TYPE,
         url: SITE_URL,
         images: {
-            url: OPENGRAPH_URL
+            url: SITE_OPENGRAPH_URL
         }
     },
     twitter: {
-        title: TITLE,
-        description: DESCRIPTION,
+        title: PAGE_TITLE,
+        description: PAGE_DESCRIPTION,
         images: {
-            url: OPENGRAPH_URL
+            url: SITE_OPENGRAPH_URL
         }
     },
     verification: { google: process.env.GOOGLE_SITE_VERTIFICATION }
